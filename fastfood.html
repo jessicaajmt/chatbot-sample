@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Craving Crazy</title>
+	<link rel="icon" href="logo.jpg" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-image: url(burger.jpg);
+			background-repeat: repeat;
+			background-size: cover;
+			font-family: Arial, sans-serif;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			width: 60%;
+			margin: 50px auto;
+			background-color: rgba(255, 255, 255, 0.8);
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+			border-radius: 5px;
+			overflow: hidden;
+		}
+
+		.container h1 {
+			font-size: 30px;
+			color: #ffa200;
+			padding: 20px;
+			margin: 0;
+			text-align: center;
+			background-color: #000000;
+			border-radius: 5px 5px 0 0;
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+			
+		}
+
+		.chatbox {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-end;
+			height: 400px; 
+			width: 100%;
+			padding: 20px;
+			overflow-y: auto;
+			
+		}
+
+		.chatbox p{
+			background-color: #f0f0f0;
+			padding: 10px;
+			border-radius: 20px;
+			margin-bottom: 10px;
+			max-width: 80%;
+			word-wrap: break-word;
+			
+		}
+
+		.input {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			margin: 0;
+			padding: 20px;
+			box-sizing: border-box;
+			background-color: #000000;
+			border-top: 1px solid #ffa200;
+			box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3);
+		}
+
+		.input input {
+			flex-grow: 1;
+			margin-right: 10px;
+			font-size: 16px;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			outline: none;
+			background-color: #fff;
+			color: #333;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+		}
+
+		.input button {
+			background-color: #ffa200;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+			transition: background-color 0.3s ease;
+		}
+
+		.input button:hover {
+			background-color: red;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<center><h1>Craving Crazy Online Chat.</h1></center>
+		
+
+		<div class="chatbox" id="chatbox">
+			<p>Chatbot: Hello! May I know your order? Burger meal, Chicken meal or Pasta meal? </p>
+		</div>
+
+		<div class="input">
+			<input type="text" id="input" placeholder="Enter your message here">
+			<button id="send">Send</button>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+		
+		
+
+</body>
+</html>
+
+  
